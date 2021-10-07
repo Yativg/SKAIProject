@@ -37,6 +37,8 @@ https://www.vagrantup.com/docs/installation (depends on your OS)
 #Results:
 #You can try if its working by curl command:
 
+![image](https://user-images.githubusercontent.com/45316192/136419499-d5bc67f4-0ca2-4e9b-8251-f94c09d47674.png)
+
 ![image](https://user-images.githubusercontent.com/45316192/136418908-91c5a887-94f5-40ad-81d4-5f0a7a7e2fa9.png)
 
-#As you can see the springboot in on port 8080 , however thank to our reverse proxy only port 8181 will expose the springboot.
+#As you can see the springboot in on port 8080 , however our reverse proxy expose it at port 8181.
