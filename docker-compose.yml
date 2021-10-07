@@ -1,0 +1,20 @@
+version: '3'  
+services:
+  ng_serv:
+    image: nginx
+    container_name: ng_serv
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - frontend
+    ports:
+      - 8181:80
+  springboot:
+    image: yativg/spring
+    container_name: springboot
+    networks:
+      - frontend
+      - backend
+networks:
+  frontend:
+  backend:
