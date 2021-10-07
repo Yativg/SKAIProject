@@ -1,11 +1,11 @@
 # SKAIProject
 
-#First we will need to deploy to install Vagrant in our system:
+ #First we will need to deploy to install Vagrant in our system:
 
 https://www.vagrantup.com/docs/installation (depends on your OS)
 
 
-#Then we will need to pull the Ubuntu18.4 box with the following:
+ #Then we will need to pull the Ubuntu18.4 box with the following:
    vagrant box add generic/ubuntu1804
 
 #replace Vagrantfile from the repo to the relevant folder.
