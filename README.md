@@ -1,44 +1,26 @@
 # SKAIProject
 
- #First we will need to deploy to install Vagrant in our system:
+ # First we will need to deploy to install Vagrant in our system:
 
 https://www.vagrantup.com/docs/installation (depends on your OS)
 
 
- #Then we will need to pull the Ubuntu18.4 box with the following:
+ # Then we will need to pull the Ubuntu18.4 box with the following:
    vagrant box add generic/ubuntu1804
+   
+ # download all in "Download" folder the files to the current folder.
+ 
+ # execute the following command:
+ 
+ Vagrant up
+ 
+ # after the loading ends, run the following command to login to the machine:
+ 
+ Vagrant ssh 
+ 
+ # you can easliy check that everything configured as expected:
+ 
+ ![image](https://user-images.githubusercontent.com/45316192/136697696-72ae7443-42ec-487e-9e80-35a577e4802d.png)
 
-#replace Vagrantfile from the repo to the relevant folder.
-
-  vagrant up
-  vagrant ssh
  
  
- #Install Docker from the following link:
- https://docs.docker.com/engine/install/ubuntu/
- 
-# Install docker compose from the following link:
- https://docs.docker.com/compose/install/
- 
-# Pull my custom Springboot image from my repo with the following command:
- docker pull yativg/spring
- 
-# Pull the official image of nginx:
- docker pull nginx
- 
-# Download the following files from my repo to any folder(they must be in the same folder):
- docker-compose.yml
- ngingx.conf
- 
-# cd to the folder of the files above and run the following command:
-
-  docker-compose up --build -d
-
-#Results:
-#You can try if its working by curl command:
-
-![image](https://user-images.githubusercontent.com/45316192/136419499-d5bc67f4-0ca2-4e9b-8251-f94c09d47674.png)
-
-![image](https://user-images.githubusercontent.com/45316192/136418908-91c5a887-94f5-40ad-81d4-5f0a7a7e2fa9.png)
-
-#As you can see the springboot in on port 8080 , however our reverse proxy expose it at port 8181.
